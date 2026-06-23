@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Détail d’une séance des cours de maqâm et de hazanout tunisienne du CFJT.">
+  <title>Séance — CFJT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">✡</span>
+      <span><strong>CFJT</strong><small>Maqâm & Hazanout tunisienne</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html#cours">Les séances</a>
+      <a href="index.html#apropos">À propos</a>
+      <a class="nav-cta" href="mailto:contact@cfjt.fr">Contact</a>
+    </nav>
+  </header>
+
+  <main class="session-page">
+    <a class="back-link" href="index.html#cours">← Retour aux séances</a>
+    <article id="session-detail"></article>
+  </main>
+
+  <footer>
+    <div><strong>CFJT</strong><p>Centre Français du Judaïsme Tunisien</p></div>
+    <div><p>32, boulevard Vital-Bouhot<br>Neuilly-sur-Seine</p></div>
+    <div><a href="mailto:contact@cfjt.fr">contact@cfjt.fr</a><p>© <span id="year"></span> CFJT</p></div>
+  </footer>
+
+  <script src="data/sessions.js"></script>
+  <script src="session.js"></script>
+</body>
+</html>
