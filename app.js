@@ -7,10 +7,23 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 function mediaTypes(session) {
   const types = [];
-  if (session.video) types.push("video");
-  if (session.audios?.length) types.push("audio");
-  if (session.documents?.length) types.push("document");
-  if (session.gallery?.length) types.push("images");
+
+  if (session.videos?.length || session.externalVideos?.length) {
+    types.push("video");
+  }
+
+  if (session.audios?.length) {
+    types.push("audio");
+  }
+
+  if (session.documents?.length) {
+    types.push("document");
+  }
+
+  if (session.gallery?.length) {
+    types.push("images");
+  }
+
   return types;
 }
 

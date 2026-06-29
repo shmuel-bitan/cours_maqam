@@ -380,3 +380,119 @@ footer a { color: white; }
   footer { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr; }
 }
+.media-item + .media-item {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.media-item h3,
+.illustration-card h3,
+.lesson-section h3 {
+  margin: 0 0 10px;
+  font-size: 29px;
+}
+
+.media-description {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.video-list {
+  display: grid;
+  gap: 36px;
+}
+
+.video-item video {
+  width: 100%;
+  max-height: 650px;
+  background: var(--navy-deep);
+}
+
+.youtube-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  background: var(--navy-deep);
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.external-video-link {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.lesson-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.lesson-section {
+  padding: 25px;
+  background: var(--cream);
+  border-left: 4px solid var(--gold);
+}
+
+.lesson-section ul {
+  margin: 15px 0 0;
+  padding-left: 20px;
+}
+
+.lesson-section li + li {
+  margin-top: 10px;
+}
+
+.illustrations-list {
+  display: grid;
+  gap: 36px;
+}
+
+.illustration-card {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--border);
+  background: var(--paper);
+}
+
+.illustration-image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--cream);
+  cursor: zoom-in;
+}
+
+.illustration-image-button img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: contain;
+}
+
+.illustration-card figcaption {
+  padding: 25px;
+}
+
+.illustration-card figcaption p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .lesson-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .illustration-card figcaption {
+    padding: 20px;
+  }
+}
